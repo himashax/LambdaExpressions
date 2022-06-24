@@ -1,0 +1,29 @@
+// Sysout assigned to greetingExpression variable
+// Now the variable can be passed around
+// Have to execute the method assigned to the variable
+greetingExpression = () -> System.out.println("Hello World!");
+
+greet(greetingExpression){
+    // Then execute the variable
+};
+
+// Can also write this way. mentioning the value instead of the variable name
+// Because the variable is equal to this code
+// Should be inline
+greet(() -> System.out.println("Hello World!")){
+};
+
+public int doubleNumber(int a){
+    return a * 2;
+};
+
+// Remove return if inline
+doubleNumberFunction = (int a) -> a * 2;
+
+addFunction = (int a, int b) -> a + b;
+
+// Have to use the return and curly braces as it contains more than one line
+safeDivideFunction = (int a, int b) -> {
+    if(b == 0) return 0;
+    return a / b;
+};
