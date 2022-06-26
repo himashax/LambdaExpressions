@@ -38,12 +38,12 @@ public class MethodReferenceExample2 {
  */
 
         // Method 04...
+        // structure === () -> method()
         // convert the lamda expression as method reference
         // No arguments passed and no arguments in the method as well
-        // Use the class we are in and the method name without parenthesis
-        Thread thread = new Thread( MethodReferenceExample2::print);
+        // Use the name of the class we are in and the method name without parenthesis
+        Thread thread = new Thread(MethodReferenceExample2::print);
         thread.start();
-
     }
 
     public static void print(){
