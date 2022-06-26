@@ -9,22 +9,30 @@ public class Greeter {
 
         Greeter greeter = new Greeter();
         //HelloWorldGreeting helloWorldGreeting = new HelloWorldGreeting();
+        // Created a new class and implemented the method
         Greeting helloWorldGreeting = new HelloWorldGreeting();
-        greeter.greet(helloWorldGreeting);
 
+        // An innerclass that
+        Greeting anonymousClass = new Greeting() {
+            @Override
+            public void perform() {
+                System.out.println("Hello World");
+            }
+        };
+
+        // Just implemented the method
         Greeting performFunction = () -> System.out.println("Hello World!");
-        addLambda addFunction = (int a, int b) -> a + b;
 
-        int a = addFunction.add(2,1);
-        System.out.println(a);
+        // Type inference
+        // Try to match the expression with the greeting interface argument in the greet method
+        greeter.greet(() -> System.out.println("Hello World"));
 
     }
 }
 
-interface myLambda{
-    void function();
-}
+//interface myLambda{
+//    void function();
+//}
 
-interface addLambda{
-    int add(int a, int b);
-}
+//        greeter.greet(anonymousClass);
+//        greeter.greet(performFunction);
