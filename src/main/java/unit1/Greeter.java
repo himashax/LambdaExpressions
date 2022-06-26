@@ -1,3 +1,5 @@
+package unit1;
+
 public class Greeter {
 
     // Passing a behaviour to the method
@@ -8,7 +10,7 @@ public class Greeter {
     public static void main(String[] args) {
 
         Greeter greeter = new Greeter();
-        //HelloWorldGreeting helloWorldGreeting = new HelloWorldGreeting();
+        //Unit1.HelloWorldGreeting helloWorldGreeting = new Unit1.HelloWorldGreeting();
         // Created a new class and implemented the method
         Greeting helloWorldGreeting = new HelloWorldGreeting();
 

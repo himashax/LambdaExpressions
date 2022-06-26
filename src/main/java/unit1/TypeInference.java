@@ -1,3 +1,5 @@
+package unit1;
+
 public class TypeInference {
 
     public void getMethod(stringLengthLambda lambdaType){
@@ -6,7 +8,7 @@ public class TypeInference {
 
     public static void main(String[] args) {
 
-        //stringLengthLambda lambdaFunction = (String word) -> word.length();
+        //Unit1.stringLengthLambda lambdaFunction = (String word) -> word.length();
         stringLengthLambda lambdaFunction = word -> word.length();
 
         TypeInference typeInference = new TypeInference();

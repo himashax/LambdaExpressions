@@ -1,6 +1,8 @@
+package unit1;
+
 public class ThisReferenceExample {
 
-    public void doProcess(int i, Process p){
+    public void doProcess(int i, unit1.Process p){
         p.print(i);
     }
 
@@ -16,12 +18,12 @@ public class ThisReferenceExample {
 
 
         // Anonymous inner class
-//        thisReferenceExample.doProcess(2, new Process() {
+//        thisReferenceExample.doProcess(2, new Unit1.Process() {
 //            @Override
 //            public void print(int a) {
 //                System.out.println("Value is "+a);
 //
-//                // refer to new Process instance inline class
+//                // refer to new Unit1.Process instance inline class
 //                System.out.println(this);
 //            }
 //

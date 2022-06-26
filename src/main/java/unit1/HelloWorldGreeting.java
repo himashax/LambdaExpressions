@@ -1,4 +1,6 @@
-public class HelloWorldGreeting implements Greeting{
+package unit1;
+
+public class HelloWorldGreeting implements Greeting {
 
     @Override
     public void perform() {
