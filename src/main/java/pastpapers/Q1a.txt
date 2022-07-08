@@ -1,0 +1,25 @@
+package pastpapers;
+
+import java.util.ArrayList;
+import java.util.List;
+
+interface IVehicle {
+    void displayVehicles();
+}
+
+public class Q1a {
+    public static void main(String[] args) {
+        IVehicle iVehicle = () -> {
+            List<String> vehicles = new ArrayList<String>();
+            vehicles.add("Car");
+            vehicles.add("Bus");
+            vehicles.add("Van");
+            vehicles.add("Jeep");
+            vehicles.add("Lorry");
+            vehicles.forEach((e) -> System.out.println(e));
+        };
+        iVehicle.displayVehicles();
+    }
+};
+
+
